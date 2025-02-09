@@ -1,0 +1,53 @@
+.cardContainer {
+  width: (calc((100vw / 3) - 10vw));
+  border-radius: 1rem;
+  padding: 2.5rem 3rem;
+  font-size: 1.6rem;
+  position: relative;
+  /* box-shadow: 1px 1px 6px; */
+}
+
+.imgContainer {
+  width: 4rem;
+  height: 4rem;
+  /* background-color: hsl(36, 87%, 49%); */
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8%;
+  /* transform: translateY(-100%); */
+}
+.imgContainer > img {
+  width: 50%;
+}
+
+.description {
+  margin: 1rem 0;
+  color: gray;
+}
+
+.jobType {
+  color: white;
+}
+
+.lighth3.jobType {
+  color: black;
+  transition: all 0.5s;
+}
+
+.country {
+  color: rgb(89, 100, 224);
+  margin-top: 2rem;
+}
+
+.light {
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.dark {
+  background-color: rgb(18, 23, 33);
+  transition: all 0.5s;
+}

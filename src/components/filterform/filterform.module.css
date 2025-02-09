@@ -1,0 +1,146 @@
+.form {
+  display: flex;
+  padding: 0 1rem;
+  position: absolute;
+  top: 9rem;
+  width: 90vw;
+  left: 5vw;
+  /* box-shadow: 0.1rem 0.1rem 0.5rem; */
+  border-radius: 0.5rem;
+}
+
+.dark {
+  background-color: rgb(18, 23, 33);
+  transition: all 0.5s;
+}
+
+.light {
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.inputContainer {
+  display: flex;
+  width: calc(100% / 3);
+  padding: 1.5rem;
+}
+
+.inputContainer:not(:last-of-type) {
+  border-right: 0.1rem solid gray;
+}
+
+.inputfield {
+  background-color: transparent;
+  border: none;
+  margin-left: 1rem;
+  outline: none;
+  font-size: 1.6rem;
+  color: white;
+  width: 100%;
+  align-self: center;
+}
+
+.label {
+  align-self: center;
+}
+
+::placeholder {
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+
+.fullTime {
+  display: inline-block;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  padding-left: 1rem;
+  align-self: center;
+  margin-right: 10rem;
+}
+
+.uncheck {
+  display: none;
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  position: relative;
+  border-radius: 0.2rem;
+  align-self: center;
+  border: 1px solid;
+}
+
+.light .fullTime,
+.light .inputfield {
+  color: rgb(18, 23, 33);
+}
+
+.checkbox::before {
+  content: url(../../assets/desktop/icon-check.svg);
+  width: 100%;
+  height: 100%;
+  background-color: rgb(89, 100, 224);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  border-radius: 0.2rem;
+}
+
+.uncheck:checked + .checkbox::before {
+  opacity: 1;
+}
+
+.filterIcon {
+  display: none;
+}
+
+@media (max-width: 564px) {
+  .displayNone {
+    display: none;
+  }
+  .form {
+    display: block;
+  }
+
+  .form .inputContainer {
+    width: 100%;
+    border-right: none;
+    position: relative;
+  }
+
+  .searchIcon {
+    position: absolute;
+    right: 5%;
+    background-color: rgb(89, 100, 224);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filterIcon {
+    display: inline-block;
+    position: absolute;
+    right: 20%;
+  }
+
+  .inputfield {
+    width: 70%;
+  }
+
+  .searchIcon > img {
+    width: 80%;
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (min-width: 565px) and (max-width: 980px) {
+  .fullTime {
+    margin-right: 0.7rem;
+  }
+}

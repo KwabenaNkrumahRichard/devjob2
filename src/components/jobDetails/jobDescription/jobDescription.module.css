@@ -1,0 +1,32 @@
+.container {
+  margin: 0 5vw;
+  padding-top: 10rem;
+  width: 90vw;
+  margin-top: 15rem;
+  /* padding-top: 5rem; */
+  padding: 4rem 3rem;
+  border-radius: 1rem;
+}
+
+/* .light {
+  background-color: rgb(247, 243, 243);
+} */
+
+.light .container {
+  background-color: white;
+}
+
+.dark .container {
+  background-color: rgb(18, 23, 33);
+}
+
+.dark,
+.light {
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 564px) {
+  .container {
+    margin-top: 22rem;
+  }
+}

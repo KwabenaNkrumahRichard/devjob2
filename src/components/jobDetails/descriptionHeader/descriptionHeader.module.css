@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.details > .p {
+  color: gray;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.button {
+  align-self: center;
+}
+
+.details > .h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.details > .h4 {
+  font-size: 1.6rem;
+  color: rgb(89, 100, 246);
+}
+
+.p2 {
+  padding: 2rem 0;
+  color: gray;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.dark .h3 {
+  color: white;
+}
+
+@media (max-width: 564px) {
+  .container {
+    flex-direction: column;
+  }
+  .button {
+    align-self: stretch;
+    margin: 3rem 0 1rem;
+  }
+}

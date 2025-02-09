@@ -1,0 +1,31 @@
+.h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+.p {
+  line-height: 2rem;
+  font-size: 1.3rem;
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.ul {
+  margin-left: 1.7rem;
+}
+
+.li {
+  line-height: 2rem;
+  font-size: 1.3rem;
+  color: gray;
+  padding-left: 2rem;
+}
+
+.li::marker {
+  color: rgb(89, 100, 224);
+}
+
+.dark .h3 {
+  color: white;
+}
