@@ -44,7 +44,9 @@ function MobileForm(props) {
         <label htmlFor="full-time" className={classes.fullTime}>
           Full-Time
         </label>
-        <Button type="submit">Search</Button>
+        <Button type="submit" className={classes.button}>
+          Search
+        </Button>
       </div>
     </form>
   );

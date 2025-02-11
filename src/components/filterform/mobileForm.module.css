@@ -1,3 +1,7 @@
+html {
+  font-size: 64.5%;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -51,7 +55,7 @@
 .fullTime {
   display: inline-block;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: bolder;
   padding-left: 1rem;
   align-self: center;
